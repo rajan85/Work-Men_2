@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+function noNull(x)
+{
+	if(x==null)
+		alert(x+" connot be empty");
+	}
+
+</script> 
+<style type="text/css">
+h1 {
+	color: green;
+	font-family: Comic Sans MS
+} 
+</style>
+
+</head>
+<body>
+	<h2 align="center">
+		enter details of new employee
+		</h2>
+		<form action="EmpServlet" method="post" style="color: blue;"
+			autocomplete="on">
+			<table align="center" cellspacing="7">
+				<tr>
+					<td width="35">FIRST NAME:</td>
+					<td width="45"><input TYPE="text" PLACEHOLDER="ENTER NAME: "
+						NAME="T1" id="i1" required autofocus="autofocus"><br></td>
+				</tr>
+				<tr>
+					<td>LAST NAME:</td>
+					<td><input TYPE="text" PLACEHOLDER="LAST NAME: " NAME="T2"
+						id="i2" required><br></td>
+				</tr>
+				<tr>
+					<td>DATE OF BIRTH(dd-mm-yyyy):</td>
+					<td><input TYPE="date" PLACEHOLDER="e.g. 2017-09-21" NAME="T3"
+						id="i3" max="2000-01-01" required><br></td>
+				</tr>
+				<tr>
+					<td>DEPARTMENT:</td>
+					<td><input TYPE="text" PLACEHOLDER="CSE" NAME="T4" id="i4"
+						required><br></td>
+				</tr>
+				<tr>
+					<td>DESIGNATION:</td>
+					<td><input TYPE="text" NAME="T5" PLACEHOLDER="JOB TITLE"
+						id="i5" required><br></td>
+				</tr>
+				<tr>
+					<td>BASIC SALARY:</td>
+					<td><input TYPE="number" PLACEHOLDER="e.g. 20000" NAME="T6"
+						id="i6" required><br></td>
+				</tr>
+
+				<tr>
+					<td>QUALIFICATION:</td>
+					<td><input list="degrees" name="T7" id="i7"> <datalist
+							id=degrees>
+							<option value="B.tech">B.tech(CSE)</option>
+							<option value="B.tech">B.tech(ME)</option>
+							<option value="B.tech">B.tech(EE)</option>
+							<option value="B.tech">B.tech(ECE)</option>
+							<option value="M.tech">M.tech(CSE)</option>
+							<option value="M.tech">M.tech(ME)</option>
+							<option value="M.tech">M.tech(EE)</option>
+							<option value="M.tech">M.tech(ECE)</option>
+							<option value="CA">CA</option>
+							<option value="MBA">MBA</option>
+							<option value="BBA">BBA</option>
+							<option value="BCA">BCA</option>
+							<option value="MCA">MCA</option>
+
+						</datalist></td>
+				</tr>
+				<TR>
+					<td>ADDRESS:</td>
+					<td><textarea rows="30 " cols="40 "></textarea> <br></td>
+				</TR>
+				<tr>
+					<td>CITY:</td>
+					<td><input TYPE="text" NAME="T9"
+						PLACEHOLDER="e.g. KURUKSHETRA" id="i9" required><br></td>
+				</tr>
+
+				<tr>
+					<td>PIN:</td>
+					<td><input TYPE="text" PLACEHOLDER="e.g. 133001" NAME="T10"
+						id="j1" required><br></td>
+				</tr>
+				<tr>
+					<td>PHONE:</td>
+					<td><input TYPE="number" PLACEHOLDER="e.g. 9876543210"
+						NAME="T11" id="j2" required><br></td>
+				</tr>
+
+				<tr>
+
+					<td><input type="submit" value="ready to submit!!"></input></td>
+					<td><input type="reset" value="reset fields"></input></td>
+				</tr>
+			</table>
+		</form>
+</body>
+</html>
